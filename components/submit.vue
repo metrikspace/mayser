@@ -32,7 +32,7 @@ export default {
 <style lang="scss">
 div.submit {
   display: grid;
-  grid-template-rows: auto min-content;
+  grid-template-rows: auto 6rem;
   height: 100%;
   width: 100%;
 }
@@ -75,10 +75,6 @@ h1 {
 }
 input {
   caret-color: transparent;
-  height: 3rem;
   text-align: center;
-}
-button {
-  height: 3rem;
 }
 </style>
