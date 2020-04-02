@@ -1,8 +1,8 @@
 <template>
-  <div class="scrap">
+  <div class="reset">
     <submit
-      heading="Scrap Parts"
-      v-bind:data="scrap"
+      heading="Reset Parts"
+      v-bind:data="reset"
       v-bind:left="setLeft"
       v-bind:right="setRight"
     />
@@ -14,7 +14,7 @@ import Submit from '@/components/submit.vue';
 export default {
   computed: {
     ...mapGetters({
-      scrap: 'scrap/GET_DATA'
+      reset: 'reset/GET_DATA'
     })
   },
   components: {
@@ -23,15 +23,15 @@ export default {
   layout: 'app',
   methods: {
     ...mapActions({
-      setLeft: 'scrap/SET_LEFT',
-      setRight: 'scrap/SET_RIGHT'
+      setLeft: 'reset/SET_LEFT',
+      setRight: 'reset/SET_RIGHT'
     })
   },
   transitions: 'page'
 };
 </script>
 <style lang="scss" scoped>
-div.scrap {
+div.reset {
   padding-top: 1rem;
 }
 </style>

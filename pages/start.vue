@@ -2,26 +2,30 @@
   <div class="start">
     <submit
       heading="Starting Partials"
-      v-bind:data="[0,1]"
-      v-bind:left="left"
-      v-bind:right="right"
+      v-bind:data="start"
+      v-bind:left="setLeft"
+      v-bind:right="setRight"
     />
   </div>
 </template>
 <script>
+import { mapActions, mapGetters } from 'vuex';
 import Submit from '@/components/submit.vue';
 export default {
+  computed: {
+    ...mapGetters({
+      start: 'start/GET_DATA'
+    })
+  },
   components: {
     submit: Submit
   },
   layout: 'app',
   methods: {
-    left: function(ref) {
-      console.log(ref);
-    },
-    right: function(ref) {
-      console.log(ref);
-    }
+    ...mapActions({
+      setLeft: 'start/SET_LEFT',
+      setRight: 'start/SET_RIGHT'
+    })
   },
   transitions: 'page'
 };

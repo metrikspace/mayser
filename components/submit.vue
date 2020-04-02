@@ -14,8 +14,8 @@
     <div class="inputs">
       <input placeholder="Left" ref="leftInput" type="number" />
       <input placeholder="Right" ref="rightInput" type="number" />
-      <button type="submit" v-on:click="left($refs.leftInput)">Submit</button>
-      <button type="submit" v-on:click="right($refs.rightInput)">Submit</button>
+      <button type="submit" v-on:click="left($refs.leftInput.value)">Submit</button>
+      <button type="submit" v-on:click="right($refs.rightInput.value)">Submit</button>
     </div>
   </div>
 </template>

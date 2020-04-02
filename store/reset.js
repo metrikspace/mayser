@@ -7,16 +7,16 @@ export const actions = {
   }
 };
 export const getters = {
-  GET_DATA: (state) => state.ddstart
+  GET_DATA: (state) => state.reset
 };
 export const mutations = {
   setLeft: (state, value) => {
-    state.ddstart = [parseInt(value), state.ddstart[1]];
+    state.reset = [parseInt(value), state.reset[1]];
   },
   setRight: (state, value) => {
-    state.ddstart = [state.ddstart[0], parseInt(value)];
+    state.reset = [state.reset[0], parseInt(value)];
   }
 };
 export const state = () => ({
-  ddstart: [0, 0]
+  reset: [0, 0]
 });

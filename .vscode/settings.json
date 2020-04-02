@@ -4,6 +4,7 @@
     "**/.editorconfig": true,
     "**/.prettierrc": true,
     "**/assets": true,
+    "**/index.vue": true,
     "**/jest.config.js": true,
     "**/jsconfig.json": true,
     "**/middleware": true,

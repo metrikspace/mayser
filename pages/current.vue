@@ -2,29 +2,30 @@
   <div class="current">
     <submit
       heading="Current Total Parts"
-      v-bind:data="getData()"
+      v-bind:data="current"
       v-bind:left="setLeft"
       v-bind:right="setRight"
     />
   </div>
 </template>
 <script>
+import { mapActions, mapGetters } from 'vuex';
 import Submit from '@/components/submit.vue';
 export default {
+  computed: {
+    ...mapGetters({
+      current: 'current/GET_DATA'
+    })
+  },
   components: {
     submit: Submit
   },
   layout: 'app',
   methods: {
-    getData: function() {
-      return [0, 1];
-    },
-    setLeft: function(ref) {
-      console.log(ref);
-    },
-    setRight: function(ref) {
-      console.log(ref);
-    }
+    ...mapActions({
+      setLeft: 'current/SET_LEFT',
+      setRight: 'current/SET_RIGHT'
+    })
   },
   transitions: 'page'
 };

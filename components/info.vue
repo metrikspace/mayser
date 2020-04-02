@@ -39,6 +39,7 @@ h2.body {
   border: 1px solid white;
   display: flex;
   justify-content: center;
+  font-weight: 500;
   text-align: center;
   &:nth-of-type(1) {
     border-bottom-left-radius: 1rem;
@@ -59,12 +60,24 @@ h2.body {
     height: 90%;
     width: 90%;
   }
+  h1.head {
+    font-size: 5rem;
+  }
+  h2.body {
+    font-size: 4.5rem;
+  }
 }
 @media screen and (max-width: 1440px) {
   div.info {
     margin: 0 auto;
     height: 80%;
     width: 90%;
+  }
+  h1.head {
+    font-size: 4.5rem;
+  }
+  h2.body {
+    font-size: 4rem;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -73,12 +86,24 @@ h2.body {
     height: 70%;
     width: 90%;
   }
+  h1.head {
+    font-size: 4rem;
+  }
+  h2.body {
+    font-size: 3.5rem;
+  }
 }
 @media screen and (max-width: 768px) {
   div.info {
     margin: 0 auto;
-    height: 90%;
+    height: 50%;
     width: 90%;
+  }
+  h1.head {
+    font-size: 3.5rem;
+  }
+  h2.body {
+    font-size: 2.5rem;
   }
 }
 @media screen and (max-width: 425px) {
@@ -87,6 +112,12 @@ h2.body {
     height: 90%;
     width: 90%;
   }
+  h1.head {
+    font-size: 3rem;
+  }
+  h2.body {
+    font-size: 2rem;
+  }
 }
 @media screen and (max-width: 375px) {
   div.info {
@@ -94,12 +125,24 @@ h2.body {
     height: 80%;
     width: 90%;
   }
+  h1.head {
+    font-size: 2.5rem;
+  }
+  h2.body {
+    font-size: 1.5rem;
+  }
 }
 @media screen and (max-width: 320px) {
   div.info {
     margin: 0 auto;
     height: 75%;
     width: 90%;
+  }
+  h1.head {
+    font-size: 2rem;
+  }
+  h2.body {
+    font-size: 1rem;
   }
 }
 </style>

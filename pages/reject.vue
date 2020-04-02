@@ -1,22 +1,31 @@
 <template>
   <div class="reject">
-    <submit heading="Rejected Parts" v-bind:data="[0,1]" v-bind:left="left" v-bind:right="right" />
+    <submit
+      heading="Rejected Parts"
+      v-bind:data="reject"
+      v-bind:left="setLeft"
+      v-bind:right="setRight"
+    />
   </div>
 </template>
 <script>
+import { mapActions, mapGetters } from 'vuex';
 import Submit from '@/components/submit.vue';
 export default {
+  computed: {
+    ...mapGetters({
+      reject: 'reject/GET_DATA'
+    })
+  },
   components: {
     submit: Submit
   },
   layout: 'app',
   methods: {
-    left: function(ref) {
-      console.log(ref);
-    },
-    right: function(ref) {
-      console.log(ref);
-    }
+    ...mapActions({
+      setLeft: 'reject/SET_LEFT',
+      setRight: 'reject/SET_RIGHT'
+    })
   },
   transitions: 'page'
 };
