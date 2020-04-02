@@ -35,24 +35,29 @@ export default {
 </script>
 <style lang="scss">
 div.submit {
-  display: grid;
-  padding: 1rem 2rem 1.5rem 2rem;
-  grid-template-rows: auto min-content;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   height: 100%;
+  justify-content: center;
+  padding: 8rem 4rem;
   width: 100%;
 }
 div.text {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  width: 100%;
 }
 div.inputs {
+  border: 2px solid white;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  width: 100%;
 }
 div.input {
   display: grid;
-  grid-template-columns: 4fr 1fr;
+  grid-template-columns: 2fr 1fr;
   height: 3rem;
 }
 h1:nth-of-type(1) {
@@ -90,5 +95,42 @@ input {
 }
 button {
   width: 100%;
+}
+</style>
+<style lang="scss">
+@media screen and (max-width: 2560px) {
+  div.text {
+    height: 100%;
+  }
+}
+@media screen and (max-width: 1440px) {
+  div.text {
+    height: 90%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  div.text {
+    height: 80%;
+  }
+}
+@media screen and (max-width: 768px) {
+  div.text {
+    height: 70%;
+  }
+}
+@media screen and (max-width: 425px) {
+  div.text {
+    height: 60%;
+  }
+}
+@media screen and (max-width: 375px) {
+  div.text {
+    height: 50%;
+  }
+}
+@media screen and (max-width: 320px) {
+  div.text {
+    height: 40%;
+  }
 }
 </style>

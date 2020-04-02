@@ -31,11 +31,6 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-div.reset {
-  padding-top: 1rem;
-}
-</style>
-<style lang="scss" scoped>
 .page-enter-active {
   animation: acrossIn 1s ease-in both;
 }
