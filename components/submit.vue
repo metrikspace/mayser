@@ -40,7 +40,6 @@ div.submit {
   flex-direction: column;
   height: 100%;
   justify-content: center;
-  padding: 8rem 4rem;
   width: 100%;
 }
 div.text {
