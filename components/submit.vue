@@ -13,12 +13,12 @@
     </div>
     <div class="inputs">
       <div class="input">
-        <input placeholder="Left" ref="leftInput" type="number" />
-        <button type="submit" v-on:click="left($refs.leftInput.value)">Submit</button>
+        <input ref="leftInput" type="number" />
+        <button v-on:click="left($refs.leftInput.value)">Submit</button>
       </div>
       <div class="input">
-        <input placeholder="Right" ref="rightInput" type="number" />
-        <button type="submit" v-on:click="right($refs.rightInput.value)">Submit</button>
+        <input ref="rightInput" type="number" />
+        <button v-on:click="right($refs.rightInput.value)">Submit</button>
       </div>
     </div>
   </div>
@@ -36,7 +36,7 @@ export default {
 <style lang="scss">
 div.submit {
   display: grid;
-  grid-template-rows: calc(100% - 5rem) 5rem;
+  grid-template-rows: auto min-content;
   height: 100%;
   width: 100%;
 }
@@ -51,7 +51,8 @@ div.inputs {
 }
 div.input {
   display: grid;
-  grid-template-columns: auto 10rem;
+  grid-template-columns: 4fr 1fr;
+  height: 3rem;
 }
 h1:nth-of-type(1) {
   grid-column: 1 / -1;
@@ -84,5 +85,9 @@ h1 {
 input {
   caret-color: transparent;
   text-align: center;
+  width: 100%;
+}
+button {
+  width: 100%;
 }
 </style>
