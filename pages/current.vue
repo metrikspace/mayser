@@ -1,6 +1,11 @@
 <template>
   <div class="current">
-    <submit heading="Current Total Parts" />
+    <submit
+      heading="Current Total Parts"
+      v-bind:data="getData()"
+      v-bind:left="setLeft"
+      v-bind:right="setRight"
+    />
   </div>
 </template>
 <script>
@@ -10,6 +15,17 @@ export default {
     submit: Submit
   },
   layout: 'app',
+  methods: {
+    getData: function() {
+      return [0, 1];
+    },
+    setLeft: function(ref) {
+      console.log(ref);
+    },
+    setRight: function(ref) {
+      console.log(ref);
+    }
+  },
   transitions: 'page'
 };
 </script>

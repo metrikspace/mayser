@@ -1,6 +1,6 @@
 <template>
   <div class="reject">
-    <submit heading="Rejected Parts" />
+    <submit heading="Rejected Parts" v-bind:data="[0,1]" v-bind:left="left" v-bind:right="right" />
   </div>
 </template>
 <script>
@@ -10,6 +10,14 @@ export default {
     submit: Submit
   },
   layout: 'app',
+  methods: {
+    left: function(ref) {
+      console.log(ref);
+    },
+    right: function(ref) {
+      console.log(ref);
+    }
+  },
   transitions: 'page'
 };
 </script>

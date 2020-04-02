@@ -1,6 +1,11 @@
 <template>
   <div class="start">
-    <submit heading="Starting Partials" />
+    <submit
+      heading="Starting Partials"
+      v-bind:data="[0,1]"
+      v-bind:left="left"
+      v-bind:right="right"
+    />
   </div>
 </template>
 <script>
@@ -10,6 +15,14 @@ export default {
     submit: Submit
   },
   layout: 'app',
+  methods: {
+    left: function(ref) {
+      console.log(ref);
+    },
+    right: function(ref) {
+      console.log(ref);
+    }
+  },
   transitions: 'page'
 };
 </script>
