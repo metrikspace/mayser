@@ -12,10 +12,14 @@
       </h1>
     </div>
     <div class="inputs">
-      <input placeholder="Left" ref="leftInput" type="number" />
-      <input placeholder="Right" ref="rightInput" type="number" />
-      <button type="submit" v-on:click="left($refs.leftInput.value)">Submit</button>
-      <button type="submit" v-on:click="right($refs.rightInput.value)">Submit</button>
+      <div class="input">
+        <input placeholder="Left" ref="leftInput" type="number" />
+        <button type="submit" v-on:click="left($refs.leftInput.value)">Submit</button>
+      </div>
+      <div class="input">
+        <input placeholder="Right" ref="rightInput" type="number" />
+        <button type="submit" v-on:click="right($refs.rightInput.value)">Submit</button>
+      </div>
     </div>
   </div>
 </template>
@@ -32,7 +36,7 @@ export default {
 <style lang="scss">
 div.submit {
   display: grid;
-  grid-template-rows: auto 6rem;
+  grid-template-rows: auto 10rem;
   height: 100%;
   width: 100%;
 }
@@ -44,6 +48,10 @@ div.text {
 div.inputs {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+}
+div.input {
+  display: grid;
+  grid-template-rows: repeat(2, 5rem);
 }
 h1:nth-of-type(1) {
   grid-column: 1 / -1;
