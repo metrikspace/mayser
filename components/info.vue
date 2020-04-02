@@ -96,14 +96,14 @@ h2.body {
 @media screen and (max-width: 768px) {
   div.info {
     margin: 0 auto;
-    height: 50%;
+    height: 80%;
     width: 90%;
   }
   h1.head {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
   h2.body {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 @media screen and (max-width: 425px) {
