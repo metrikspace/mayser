@@ -36,6 +36,7 @@ export default {
 <style lang="scss">
 div.submit {
   display: grid;
+  padding: 1rem 2rem 1.5rem 2rem;
   grid-template-rows: auto min-content;
   height: 100%;
   width: 100%;
