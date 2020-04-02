@@ -1,0 +1,16 @@
+{
+  "files.exclude": {
+    "**/.babelrc": true,
+    "**/.editorconfig": true,
+    "**/.prettierrc": true,
+    "**/assets": true,
+    "**/jest.config.js": true,
+    "**/jsconfig.json": true,
+    "**/middleware": true,
+    "**/nuxt.config.js": true,
+    "**/package.json": true,
+    "**/plugins": true,
+    "**/static": true,
+    "**/test": true
+  }
+}
