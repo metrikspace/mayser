@@ -75,10 +75,10 @@ h1 {
 }
 input {
   caret-color: transparent;
-  height: 5rem;
+  height: 3rem;
   text-align: center;
 }
 button {
-  height: 5rem;
+  height: 3rem;
 }
 </style>
