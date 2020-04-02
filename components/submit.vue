@@ -36,7 +36,7 @@ export default {
 <style lang="scss">
 div.submit {
   display: grid;
-  grid-template-rows: auto 10rem;
+  grid-template-rows: calc(100% - 10rem) 10rem;
   height: 100%;
   width: 100%;
 }
