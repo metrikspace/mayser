@@ -36,7 +36,7 @@ export default {
 <style lang="scss">
 div.submit {
   display: grid;
-  grid-template-rows: calc(100% - 10rem) 10rem;
+  grid-template-rows: calc(100% - 5rem) 5rem;
   height: 100%;
   width: 100%;
 }
@@ -51,7 +51,7 @@ div.inputs {
 }
 div.input {
   display: grid;
-  grid-template-rows: repeat(2, 5rem);
+  grid-template-columns: auto 10rem;
 }
 h1:nth-of-type(1) {
   grid-column: 1 / -1;
